@@ -15,12 +15,19 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
 import javax.validation.*;
 
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
+	
+	//use map to save temporary values (since not connected to a database)
+	Map<String, UserRest> users;
 	
 	@GetMapping
 	public String getUsers(@RequestParam(value="page", defaultValue="1") int page,
@@ -38,12 +45,19 @@ public class UserController {
 					})
 	public ResponseEntity<UserRest> getUser(@PathVariable String userId)
 	{
-		UserRest returnValue = new UserRest();
-		returnValue.setEmail("test@test.com");
-		returnValue.setFirstName("Garbo");
-		returnValue.setLastName("Cheng Ye");
+//		UserRest returnValue = new UserRest();
+//		returnValue.setEmail("test@test.com");
+//		returnValue.setFirstName("Garbo");
+//		returnValue.setLastName("Cheng Ye");
 		
-		return new ResponseEntity<UserRest>(returnValue, HttpStatus.OK);
+		if(users.containsKey(userId))
+		{
+			return new ResponseEntity<>(users.get(userId), HttpStatus.OK);
+		} else {
+			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+		}
+		
+		//return new ResponseEntity<>(returnValue, HttpStatus.OK);
 	}
 	
 	//accepts and return values in both json and xml
@@ -61,6 +75,13 @@ public class UserController {
 		returnValue.setEmail(userDetails.getEmail());
 		returnValue.setFirstName(userDetails.getFirstName());
 		returnValue.setLastName(userDetails.getLastName());
+		
+		//generate a random id
+		String userId = UUID.randomUUID().toString();
+		returnValue.setUserId(userId);
+		
+		if(users == null) users = new HashMap<>();
+		users.put(userId, returnValue);
 		
 		return new ResponseEntity<UserRest>(returnValue, HttpStatus.OK);
 	} 
