@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.appsdeveloperblog.app.ws.ui.model.response.UserRest;
+
 import org.springframework.web.bind.annotation.*;
 
 
@@ -14,16 +17,22 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 	
 	@GetMapping
-	public String getUsers(@RequestParam(value="page") int page,
-			@RequestParam(value="limit") int limit)
+	public String getUsers(@RequestParam(value="page", defaultValue="1") int page,
+			@RequestParam(value="limit", defaultValue="50") int limit,
+			@RequestParam(value="limit", defaultValue="desc", required= false) String sort)
 	{
-		return "get users was called page = " + page + " and limit =" + limit;
+		return "get users was called page = " + page + " and limit =" + limit + "and sort = " + sort;
 	}
 
 	@GetMapping(path="/{userId}")
-	public String getUser(@PathVariable String userId)
+	public UserRest getUser(@PathVariable String userId)
 	{
-		return "get user request with userId =" + userId;
+		UserRest returnValue = new UserRest();
+		returnValue.setEmail("test@test.com");
+		returnValue.setFirstName("Garbo");
+		returnValue.setLastName("Cheng");
+		
+		return returnValue;
 	}
 	
 	@PostMapping 
