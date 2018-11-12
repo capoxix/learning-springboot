@@ -502,3 +502,171 @@ org.eclipse.core.runtime.CoreException: No ContentProposalProviderFactory found.
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
 !SUBENTRY 1 Activator 4 0 2018-11-11 18:57:26.130
 !MESSAGE No ContentProposalProviderFactory found. Using a dummy factory. Content assist proposals in Boot Launch Conf editor won't be available!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:25.554
+!MESSAGE Preparing classpath changed notification mobile-app-ws-1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:25.555
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:25.555
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:25.556
+!MESSAGE executing callback sts4.classpath.oaeXiPcN mobile-app-ws-1 false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:25.559
+!MESSAGE executing callback sts4.classpath.oaeXiPcN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:25.709
+!MESSAGE Preparing classpath changed notification mobile-app-ws-1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:25.710
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:25.713
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:25.713
+!MESSAGE executing callback sts4.classpath.oaeXiPcN mobile-app-ws-1 false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:26.587
+!MESSAGE executing callback sts4.classpath.oaeXiPcN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:30.884
+!MESSAGE Preparing classpath changed notification mobile-app-ws-1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:30.885
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:30.887
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:30.888
+!MESSAGE executing callback sts4.classpath.oaeXiPcN mobile-app-ws-1 false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:30:30.896
+!MESSAGE executing callback sts4.classpath.oaeXiPcN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:14.872
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oaeXiPcN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:14.873
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.oaeXiPcN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:14.878
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:14.878
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oaeXiPcN => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.107
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LaAPwzGN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.108
+!MESSAGE subscribing to classpath changes: sts4.classpath.LaAPwzGN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.108
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.108
+!MESSAGE subsribers = [sts4.classpath.LaAPwzGN]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.108
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.109
+!MESSAGE project mobile-app-ws-1 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.109
+!MESSAGE project mobile-app-ws ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.109
+!MESSAGE Preparing classpath changed notification mobile-app-ws-1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.109
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.110
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.110
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LaAPwzGN => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.112
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.112
+!MESSAGE executing callback sts4.classpath.LaAPwzGN mobile-app-ws-1 false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.569
+!MESSAGE executing callback sts4.classpath.LaAPwzGN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.570
+!MESSAGE Preparing classpath changed notification mobile-app-ws
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.570
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.574
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:19.574
+!MESSAGE executing callback sts4.classpath.LaAPwzGN mobile-app-ws false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:20.225
+!MESSAGE executing callback sts4.classpath.LaAPwzGN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:51.171
+!MESSAGE Preparing classpath changed notification mobile-app-ws
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:51.171
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:51.172
+!MESSAGE executing callback sts4.classpath.LaAPwzGN mobile-app-ws true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:51.278
+!MESSAGE executing callback sts4.classpath.LaAPwzGN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:55.245
+!MESSAGE Preparing classpath changed notification mobile-app-ws-1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:55.246
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:55.247
+!MESSAGE executing callback sts4.classpath.LaAPwzGN mobile-app-ws-1 true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:34:55.251
+!MESSAGE executing callback sts4.classpath.LaAPwzGN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.672
+!MESSAGE Preparing classpath changed notification mobile-app-ws
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.672
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.673
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.673
+!MESSAGE executing callback sts4.classpath.LaAPwzGN mobile-app-ws false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.675
+!MESSAGE executing callback sts4.classpath.LaAPwzGN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.789
+!MESSAGE Preparing classpath changed notification mobile-app-ws
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.790
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.794
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.794
+!MESSAGE executing callback sts4.classpath.LaAPwzGN mobile-app-ws false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.806
+!MESSAGE executing callback sts4.classpath.LaAPwzGN SUCCESS [done]
