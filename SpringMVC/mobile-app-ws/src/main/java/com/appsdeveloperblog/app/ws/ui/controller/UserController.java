@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.appsdeveloperblog.app.ws.ui.model.response.UserRest;
 
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -23,8 +24,9 @@ public class UserController {
 	{
 		return "get users was called page = " + page + " and limit =" + limit + "and sort = " + sort;
 	}
-
-	@GetMapping(path="/{userId}")
+	
+	//support json and xml as response
+	@GetMapping(path="/{userId}", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
 	public UserRest getUser(@PathVariable String userId)
 	{
 		UserRest returnValue = new UserRest();

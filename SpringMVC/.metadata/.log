@@ -670,3 +670,33 @@ org.eclipse.core.runtime.CoreException: No ContentProposalProviderFactory found.
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 19:36:06.806
 !MESSAGE executing callback sts4.classpath.LaAPwzGN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:48.747
+!MESSAGE Preparing classpath changed notification mobile-app-ws
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:48.748
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:48.752
+!MESSAGE classpath=81 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:48.752
+!MESSAGE executing callback sts4.classpath.LaAPwzGN mobile-app-ws false 81
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:48.759
+!MESSAGE executing callback sts4.classpath.LaAPwzGN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:50.155
+!MESSAGE Preparing classpath changed notification mobile-app-ws
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:50.155
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:50.158
+!MESSAGE classpath=81 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:50.158
+!MESSAGE executing callback sts4.classpath.LaAPwzGN mobile-app-ws false 81
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-11-11 20:04:50.162
+!MESSAGE executing callback sts4.classpath.LaAPwzGN SUCCESS [done]
