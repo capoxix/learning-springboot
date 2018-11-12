@@ -7,10 +7,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.appsdeveloperblog.app.ws.ui.model.request.UserDetailsRequestModel;
 import com.appsdeveloperblog.app.ws.ui.model.response.UserRest;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.*;
 
 
 @RestController
@@ -26,23 +31,40 @@ public class UserController {
 	}
 	
 	//support json and xml as response
-	@GetMapping(path="/{userId}", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
-	public UserRest getUser(@PathVariable String userId)
+	@GetMapping(path="/{userId}", 
+			produces = { 
+					MediaType.APPLICATION_XML_VALUE, 
+					MediaType.APPLICATION_JSON_VALUE
+					})
+	public ResponseEntity<UserRest> getUser(@PathVariable String userId)
 	{
 		UserRest returnValue = new UserRest();
 		returnValue.setEmail("test@test.com");
 		returnValue.setFirstName("Garbo");
-		returnValue.setLastName("Cheng");
+		returnValue.setLastName("Cheng Ye");
 		
-		return returnValue;
+		return new ResponseEntity<UserRest>(returnValue, HttpStatus.OK);
 	}
 	
-	@PostMapping 
-	public String createUser()
+	//accepts and return values in both json and xml
+	@PostMapping(
+			consumes = { 
+					MediaType.APPLICATION_XML_VALUE, 
+					MediaType.APPLICATION_JSON_VALUE
+					}, produces = { 
+							MediaType.APPLICATION_XML_VALUE, 
+							MediaType.APPLICATION_JSON_VALUE
+							}) 
+	public ResponseEntity<UserRest> createUser(@Valid @RequestBody UserDetailsRequestModel userDetails)
 	{
-		return "post user request";
-	}
-	
+		UserRest returnValue = new UserRest();
+		returnValue.setEmail(userDetails.getEmail());
+		returnValue.setFirstName(userDetails.getFirstName());
+		returnValue.setLastName(userDetails.getLastName());
+		
+		return new ResponseEntity<UserRest>(returnValue, HttpStatus.OK);
+	} 
+	 
 	@PutMapping
 	public String updateUser()
 	{
